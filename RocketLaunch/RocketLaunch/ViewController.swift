@@ -10,16 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var darkbluebg: UIImageView!
+    @IBOutlet weak var powerbtn: UIButton!
+    @IBOutlet weak var cloudholder: UIView!
+    @IBOutlet weak var rocket: UIImageView!
+    @IBOutlet weak var rocketlaunchlbl: UILabel!
+    @IBOutlet weak var onlbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func powerbtnpressed(_ sender: Any) {
+        cloudholder.isHidden = false
+        darkbluebg.isHidden = true
+        powerbtn.isHidden = true
     }
-
+    
 
 }
 
