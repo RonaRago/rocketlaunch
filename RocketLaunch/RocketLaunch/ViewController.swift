@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         player.play()
         
         //Animation
-        UIView.animate(withDuration: 2.4, animations: {
+        UIView.animate(withDuration: 2.2, animations: {
             self.rocket.frame = CGRect(x: 0, y: 50, width: 414, height: 532)
         }) { (finished) in
             self.rocketlaunchlbl.isHidden = false
