@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 class ViewController: UIViewController {
     
-    
+    //testpush
     //variable declaration
     @IBOutlet weak var darkbluebg: UIImageView!
     @IBOutlet weak var powerbtn: UIButton!
@@ -33,10 +33,10 @@ class ViewController: UIViewController {
             player.prepareToPlay()
         }
         catch let error as NSError{
+     
             print(error.description)
         }
     }
-    
     @IBAction func powerbtnpressed(_ sender: Any) {
         cloudholder.isHidden = false
         darkbluebg.isHidden = true
